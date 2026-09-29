@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -68,7 +68,7 @@
       <p class="lead">Handcrafted dry fruit boxes, chocolate hampers and festive gift sets from Usha Gift House — beautifully packed and delivered fresh to your door.</p>
       <div class="cta">
         <a class="btn btn-light" data-wa href="#">Order Now <span class="ic"><svg><use href="#arrow"/></svg></span></a>
-        <a class="btn btn-outline" href="#collections">Explore Collections</a>
+        <a class="btn btn-outline" href="collections.html">Explore Collections</a>
       </div>
     </div>
     <div class="hero-art">
@@ -92,7 +92,7 @@
   <div class="wrap">
     <div class="col-head rv">
       <div><span class="eyebrow">Our collections</span><h2>Boxes made for<br>every <em>celebration.</em></h2></div>
-      <a class="btn btn-dark" href="#gallery">Browse all designs <span class="ic"><svg><use href="#arrow"/></svg></span></a>
+      <a class="btn btn-dark" href="collections.html">Browse all designs <span class="ic"><svg><use href="#arrow"/></svg></span></a>
     </div>
     <div class="cards rv d1" id="cards">
       <article class="card on" tabindex="0"><img src="images/collection-luxury-trunk.webp" alt="Luxury trunk hamper with Ferrero Rocher and jars" loading="lazy"><div class="tx"><h3>Luxury Trunk Hampers</h3><p class="desc">Latch-lock trunks lined in satin, filled with jars of dry fruits, chocolates and keepsakes — made for weddings and grand gifting.</p></div></article>
@@ -214,6 +214,32 @@
   </div>
 </section>
 
+<section class="sec review-form-section" id="leave-review" aria-labelledby="reviewFormHeading">
+  <div class="wrap review-form-wrap">
+    <div>
+      <span class="eyebrow">Your experience</span>
+      <h2 id="reviewFormHeading">Share your gifting story.</h2>
+      <p>Your feedback helps us make every gift more special.</p>
+    </div>
+    <form class="review-form" id="reviewForm">
+      <label for="reviewName">Your name</label>
+      <input id="reviewName" name="name" type="text" maxlength="80" autocomplete="name" required>
+      <label for="reviewRating">Your rating</label>
+      <select id="reviewRating" name="rating" required>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Very good</option>
+        <option value="3">3 - Good</option>
+        <option value="2">2 - Fair</option>
+        <option value="1">1 - Poor</option>
+      </select>
+      <label for="reviewText">Your review</label>
+      <textarea id="reviewText" name="review" rows="4" maxlength="1000" required></textarea>
+      <button class="btn btn-dark" type="submit">Submit Review</button>
+      <p class="review-form-status" id="reviewFormStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="sec dark testi" id="reviews">
   <div class="wrap">
@@ -240,14 +266,14 @@
 </section>
 
 <!-- FINAL CTA -->
-<section class="fcta" style="--ctabg:url(../images/rose-lily-dry-fruit-box.webp)">
+<section class="fcta" style="--ctabg:url(images/rose-lily-dry-fruit-box.webp)">
   <div class="wrap">
     <div class="fcta-card rv">
       <span class="eyebrow">Get started</span>
       <h2>Ready to send a gift they will remember?</h2>
       <div class="row">
         <a class="btn btn-dark" data-wa href="#">Order Now <span class="ic"><svg><use href="#arrow"/></svg></span></a>
-        <a class="btn btn-outline dk btn-plain" href="#collections">Explore Collections</a>
+        <a class="btn btn-outline dk btn-plain" href="collections.html">Explore Collections</a>
       </div>
     </div>
   </div>
@@ -261,8 +287,10 @@
       <div><a href="#home" class="logo" aria-label="Usha Gift House"><svg viewBox="0 0 64 44" aria-hidden="true"><use href="#lotus"/></svg><div><span>Usha</span><small>GIFT HOUSE</small></div></a></div>
       <div class="r">
         <form class="nl" id="nl" novalidate>
+          <input type="text" id="nlName" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
           <input type="email" id="nlEmail" placeholder="Enter your email address..." aria-label="Email address" required>
           <button type="submit">Subscribe Now</button>
+          <a class="nl-subscribers" href="subscribers.html">Our Subscribers</a>
         </form>
         <p class="nl-msg" id="nlMsg" role="status"></p>
       </div>
@@ -278,8 +306,8 @@
       </div>
       <div class="rcols">
         <div><h4>Contact</h4><ul>
-          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
-          <li><a href="mailto:hello@ushagifthouse.com">hello@ushagifthouse.com</a></li></ul></div>
+          <li><a href="tel:+919324111470">+91 93241 11470</a></li>
+          <li>hello@ushagifthouse.com</li></ul></div>
         <div><h4>Social Media</h4><ul>
           <li><a href="#" target="_blank" rel="noopener">Facebook</a></li><li><a href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li><li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
         <div style="grid-column:1/-1"><h4>Store</h4><address>Shop No. 12, Main Market Road,<br>Mumbai, Maharashtra 400001</address></div>
@@ -289,6 +317,6 @@
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="main.js" defer></script>
 </body>
 </html>
